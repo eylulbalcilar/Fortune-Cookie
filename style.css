@@ -1,0 +1,113 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: 
+    linear-gradient(to bottom, #E8DCD3 0%, #CBB59D 100%),
+    url('https://www.transparenttextures.com/patterns/white-dust.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: #5C3A1A;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  padding: 30px 0 10px;
+  position: relative;
+}
+
+
+.container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+h1 {
+  font-size: 36px;
+  color: #5C3A1A;
+  margin: 0;
+}
+
+button {
+  background-color: #af9379;
+  color: #E8DCD3;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8c6f58;
+}
+
+.cookie {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  margin: 0 auto;
+  display: none; /* Başta görünmesin */
+}
+
+.left-half, .right-half {
+  position: absolute;
+  width: 90px;
+  height: 120px;
+  background: radial-gradient(circle at 40% 30%, #e0ad68, #b97a33);
+  border-radius: 90px 90px 20px 20px;
+  box-shadow: inset -4px -6px 10px rgba(0,0,0,0.15),
+              2px 2px 8px rgba(0,0,0,0.2);
+  top: 0;
+  transition: transform 1s ease;
+}
+
+
+/* Sol parça */
+.left-half {
+  left: 0;
+}
+
+/* Sağ parça */
+.right-half {
+  right: 0;
+}
+
+/* Kağıt */
+.fortune-paper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 140px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.8s ease;
+}
+
+.fortune-paper p {
+  font-size: 12px;
+  color: #5C3A1A;
+  font-weight: 500;
+}
+
