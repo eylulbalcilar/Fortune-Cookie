@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="A simple fortune cookie web page that displays random fortunes." />
+  <meta name="keywords" content="fortune cookie, random fortune, web page" />
+  <title>Fortune Cookie</title>
+  <!-- updated for deploy -->
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Başlık kısmı (sabit üstte) -->
+  <header>
+    <h1>Fortune Cookie</h1>
+  </header>
+
+  <!-- Ana içerik -->
+  <main class="container">
+    <!-- Cookie kutusu -->
+    <div class="cookie" id="cookie">
+      <div class="left-half"></div>
+      <div class="right-half"></div>
+      <div class="fortune-paper" id="fortunePaper">
+        <p id="fortuneText"></p>
+      </div>
+    </div>
+
+    <!-- Buton ve alt yazı -->
+    <button id="get-fortune-btn">Get Your Fortune</button>
+    <p>Cookies Don’t Lie! 🥠</p>
+  </main>
+
+  <!-- JavaScript dosyası -->
+  <script src="script.js" defer></script>
+</body>
+</html>
